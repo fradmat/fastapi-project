@@ -1,0 +1,13 @@
+name: control
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - numpy=1.23.1
+  - fastapi
+  - uvicorn
+  - pip:
+    - pillow
