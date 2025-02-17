@@ -14,7 +14,7 @@ RUN conda env create -f environment_app.yaml
 SHELL ["conda", "run", "-n", "control", "/bin/bash", "-c"]
 
 # Copy the rest of project
-COPY local.py webapp.py /app/
+COPY webapp.py /app/
 
 # Expose the default FastAPI port
 EXPOSE 8000

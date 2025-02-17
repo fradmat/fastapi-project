@@ -56,10 +56,6 @@ def generate(request: ImageRequest):
         # images = generate_images(request.num_samples)
         # images_base64 = [convert_image_to_bytes(img) for img in images]
 
-        # # return {"images": images_base64}
-        # images = []
-        # for _ in range(request.num_samples):
-        #     images.append(DummyImageModel.forward())
         images = DummyImageModel().forward(request.num_samples)
 
         images_base64 = [convert_image_to_bytes(img) for img in images]
